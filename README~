@@ -1,0 +1,30 @@
+Pirvulescu Andreea 342C4
+
+Implementare:
+    - fac o parcurgere DFS a gridului pana cand ajung la o celula care nu mai are vecini
+	care pot fi explorati deoarece
+		-> celula este perete
+		-> unul dintre vecini este mlastina si astfel toti vecinii devin nesiguri
+	- retin intr-o lista toata calea pana in momentul curent, iar daca ajung la situatia prezentata mai sus
+	sterg celula din cale, si revin la celula anterioara pana cand gasesc o celula care mai are vecini care
+	nu au fost explorati
+	- pot ramane portiuni din harta neexplorate daca se ajunge la un stadiu in care toata zona este incojurata
+	de celule nesigure
+   
+Notatii:
+    - tipuri de celule 
+        % perete
+		M mlastina
+		- pamant
+		X neexplorat
+     - statusul unei celule
+        S safe
+        U unsafe
+		? no status  
+        
+               
+    
+    
+    
+    
+    
